@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita+Swashed:wght@400;700&display=swap');
+
+.menuHead{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	font-family: 'Sansita Swashed', cursive;
+}
+
+form {
+	background-image: url(/img/bg_section.jpg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	font-family: 'Open Sans', sans-serif;
+	height: 100vh;
+}
+
+.formcontainer {
+		background-color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+		border-radius: 3px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: auto;
+		width: auto;
+	}
+
+.formrow {
+	display: flex;
+	justify-content: center;
+	padding: .5em;
+		
+	label {
+			margin: 5px;
+			padding: .5em 1em .5em 0;
+			text-align: center;
+	}
+		
+	input, button {
+		padding: .5em;
+		box-shadow: 5px 5px #808080;		
+	}
+
+	button {
+		background: gray;
+		color: white;
+		border: 0;
+		width: 20px;	
+	}
+
+}
+
+input:hover, button:hover {
+	transform: scale(1.1);
+}
