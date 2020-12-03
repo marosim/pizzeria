@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Booking a table</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="booking.js"></script>
+</head>
+<body>
+
+	
+	
+	<form>
+
+		<div class="formcontainer">
+			<div class="menuHead">
+				<h1>Pizza <br>
+					Dominium</h1>
+					<h2>Asztalfoglalás</h2>
+			</div>
+
+			<div class="formrow">
+				<input type="text" id="myName" name="myName" value="" placeholder="Név" size="30px" autofocus required>
+			</div>
+
+			<div class="formrow">
+				<input type="email" id="myEmail" name="myEmail" value="" placeholder="Email"  size="30px" required>
+			</div>
+
+			<div class="formrow">
+			<label>Asztalfoglalás dátuma:</label>
+			</div>
+			<div class="formrow">				
+				<input type="date" id="myDate" name="myDate" value="" placeholder="Foglalás dátuma" size="30" required>
+			</div>
+			
+			<div class="formrow">
+			<label>Asztalfoglalás időpontja:</label>
+			</div>
+			<div class="formrow">				
+				<input type="time" id="myTime" name="myTime" value="" placeholder="Foglalás időpontja" size="30" required>
+			</div>
+
+			<div class="formrow">
+			<label for="numberofpeople">Hány személyre szeretne foglalni?</label>		
+			</div>
+			<div class="formrow">				
+				<input type="number" id="numberOfPeople" name="numberOfPeople" value="" min="1" max="10" required>
+			</div>
+
+			<div class="formrow">
+				<input type="submit" value="küldés" onclick="test(); return false;">
+			</div>
+		</div>
+
+		<div class="checkoutRow">
+			<p id="checkoutText"></p>
+			<p id="checkoutName"></p>
+			<p id="checkoutEmail"></p>
+			<p id="checkoutDate"></p>
+			<p id="checkoutTime"></p>
+			<p id="checkoutGuest"></p>
+		</div>
+
+	</form>
+	
+	
+
+</body>
+</html>
